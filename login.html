@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="login-page">
+
+<div class="login-wrapper">
+    <div class="login-box effect-float">
+
+        <div class="login-logo">
+            👑 SHOP Q&K 👑
+        </div>
+
+        <p class="login-desc">
+            Đăng Nhập Vào <b>SHOP Q&K</b><br>
+            <span>Uy Tín - Bảo Mật - Chất Lượng</span>
+        </p>
+
+        <form>
+            <div class="input-group">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Tài Khoản Email">
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Mật Khẩu">
+                <span class="show-pass" onclick="togglePass()">👁 Hiện</span>
+            </div>
+
+            <button class="btn-login">
+                <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập
+            </button>
+        </form>
+
+        <div class="login-footer">
+            <a href="#">Đăng Ký</a>
+            <a href="#">Quên Mật Khẩu</a>
+            <span>🌐 Tiếng Việt</span>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function togglePass(){
+    const pass = document.getElementById("password");
+    pass.type = pass.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>

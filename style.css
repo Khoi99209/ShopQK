@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* ===== COMMON ===== */
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar{
+    background:#d6001c;
+    color:#fff;
+    font-size:13px;
+    padding:6px 20px;
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+
+/* ===== HEADER ===== */
+.header{
+    background:#fff;
+    border-bottom:1px solid #eee;
+}
+
+.header-main{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#d6001c;
+}
+
+.search{
+    width:45%;
+    padding:10px;
+    border:2px solid #d6001c;
+    border-radius:4px;
+}
+
+.header-right a{
+    margin-left:15px;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+}
+
+/* ===== MENU ===== */
+.menu{
+    background:#d6001c;
+}
+
+.menu .container{
+    display:flex;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    padding:14px 18px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    background:#b00016;
+}
+
+/* ===== BANNER ===== */
+.banner{
+    margin:20px auto;
+}
+
+.banner img{
+    width:100%;
+    border-radius:6px;
+}
+
+/* ===== SERVICES ===== */
+.services{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.services div{
+    background:#d6001c;
+    color:#fff;
+    padding:18px;
+    border-radius:6px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* ===== TITLE ===== */
+.section-title{
+    background:#d6001c;
+    color:#fff;
+    padding:10px 20px;
+    display:inline-block;
+    border-radius:6px;
+    margin:20px 0;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+.product{
+    background:#fff;
+    padding:15px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#000;
+    position:relative;
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.product img{
+    width:100%;
+    height:170px;
+    object-fit:contain;
+}
+
+.product h3{
+    font-size:15px;
+    margin:10px 0;
+}
+
+.price{
+    color:#d6001c;
+    font-weight:bold;
+    font-size:16px;
+}
+
+/* ===== PRODUCT DETAIL ===== */
+.product-detail{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin:40px auto;
+}
+
+.buy-btn{
+    background:#d6001c;
+    color:#fff;
+    padding:12px 20px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* ===== LOGIN ===== */
+.login-box{
+    width:350px;
+    background:#fff;
+    margin:100px auto;
+    padding:30px;
+    border-radius:6px;
+    text-align:center;
+}
+
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+}
+
+.fb{
+    background:#3b5998;
+    color:#fff;
+    padding:10px;
+    border:none;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.gg{
+    background:#db4437;
+    color:#fff;
+    padding:10px;
+    border:none;
+    width:100%;
+}
+/* ===== LOGIN PAGE ===== */
+.login-page{
+    margin:0;
+    height:100vh;
+    background:#eef1f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hiệu ứng lơ lửng */
+.effect-float{
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float{
+    0%{ transform:translateY(0); }
+    50%{ transform:translateY(-8px); }
+    100%{ transform:translateY(0); }
+}
+
+.login-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.login-box{
+    width:380px;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+/* Logo */
+.login-logo{
+    background:linear-gradient(180deg,#cfe6ff,#8fc2ff);
+    border-radius:25px;
+    padding:10px;
+    font-weight:bold;
+    margin:-45px auto 15px;
+    width:220px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Mô tả */
+.login-desc{
+    font-size:14px;
+    margin-bottom:20px;
+}
+.login-desc span{
+    font-size:12px;
+    color:#555;
+}
+
+/* Input */
+.input-group{
+    position:relative;
+    margin-bottom:15px;
+}
+
+.input-group i{
+    position:absolute;
+    left:12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#666;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px 70px 12px 38px;
+    border:1px solid #8fbfff;
+    border-radius:6px;
+    outline:none;
+}
+
+.input-group input:focus{
+    border-color:#2d7cff;
+    box-shadow:0 0 0 2px #cfe3ff;
+}
+
+.show-pass{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:12px;
+    color:#2d7cff;
+}
+
+/* Button */
+.btn-login{
+    width:100%;
+    padding:12px;
+    background:#7db8ff;
+    border:none;
+    border-radius:6px;
+    font-size:15px;
+    cursor:pointer;
+    margin-top:5px;
+}
+
+.btn-login:hover{
+    background:#5aa4ff;
+}
+
+/* Footer */
+.login-footer{
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+}
+
+.login-footer a{
+    text-decoration:none;
+    color:#000;
+}
